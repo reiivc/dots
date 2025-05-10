@@ -1,0 +1,126 @@
+* {
+  font-family: '0xProto','Symbols Nerd Font Mono';
+  font-feature-settings: '"zero","ss01","ss02","ss03","ss04","ss05","cv31"';
+  font-size: 14px;
+  min-height: 35px
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  transition: none
+}
+
+#custom-apps,#workspaces,#custom-notifications {
+  border-radius: 17px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+#custom-apps,#custom-notifications {
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+#custom-notifications {
+  margin-left: 0;
+  margin-right: 12px
+}
+
+#workspaces,#clock,#pulseaudio, #battery, #wlrtaskbar {
+  background: @bg-light
+}
+
+#workspaces button {
+  padding: 0 10px;
+  color: @inactive;
+}
+
+#workspaces button.active {
+  color: @icons
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit
+}
+
+#window,#tray {
+  background-color: @bg-light;
+  border-radius: 17px;
+  color: @fg;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+#tray {
+  border-radius: 0px;
+  margin-right: 0
+}
+
+#custom-shutdown,#custom-logout,#custom-reboot,#custom-suspend,#custom-tray-collapsed,#clock,#pulseaudio,#custom-clock-icon,#custom-audio-icon, #battery, #custom-firmware, #wlr-taskbar {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+ border-radius: 0px 0 0 0;
+  padding-right: 10px
+
+
+}
+
+
+#custom-divider {
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+#custom-shutdown,#custom-tray-collapsed,#clock, #wlr-taskbar {
+  border-radius: 0px 17px 17px 0px;
+  margin-right: 15px
+}
+#custom-power-left-end,#custom-tray-left-end {
+  border-radius: 0px
+}
+#battery, #pulseaudio {
+  border-radius: 17px 17px 17px 17px;
+  margin-right: 15px
+}
+#custom-power-left-end,#custom-tray-left-end,#custom-clock-icon,#custom-audio-icon, #wlr-taskbar {
+  background-color: @bg-light;
+  border-radius: 17px 0px 0px 17px;
+  border-right: none;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+
+#clock {
+  color: @fg;
+  padding-left: 0px
+}
+
+#window {
+  transition: linear .3s
+}
+
+window#waybar {
+  background-color: rgba(25,23,38,1);
+  border-bottom: 1px solid @border
+}
+
+#custom-notifications,#custom-shutdown,#custom-logout,#custom-reboot,#custom-firmware,#custom-suspend,#custom-tray-collapsed,#custom-divider,#custom-clock-icon,#custom-audio-icon, #battery, #pulseaudio, #clock, #wlr-taskbar {
+  background-color: @bg-light;
+  color: @icons
+}
+
+#custom-apps {
+background-color: @accent;
+color: @bg-light;
+margin-left: 12px;
+font-size: 20px
+}
+
