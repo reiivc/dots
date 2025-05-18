@@ -108,7 +108,7 @@ window#waybar.empty #window {
 }
 
 window#waybar {
-  background-color: rgba(25,23,38,1);
+  background-color: rgba(25,23,38,0.5);
   border-bottom: 1px solid @border
 }
 
