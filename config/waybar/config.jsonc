@@ -1,13 +1,13 @@
 {
   "layer": "top",
   "position": "bottom",
-    "modules-left": ["custom/apps", "hyprland/workspaces", "custom/updates"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/power-left-end", "group/power", "custom/tray-left-end", "group/sys-tray", "battery", "pulseaudio", "custom/powerbar", "custom/clock-icon", "clock", "custom/notifications"],
+    "modules-left": ["custom/apps",  "hyprland/window", "custom/updates"],
+    "modules-center": [ "custom/clock-icon", "clock", ],
+    "modules-right": ["custom/power-left-end", "group/power","hyprland/workspaces", "custom/tray-left-end", "group/sys-tray", "battery", "pulseaudio", "custom/powerbar", "custom/notifications"],
     "custom/apps": {
       "format": " 󰣇 ",
       "tooltip": false,
-      "on-click": "tofi-drun -c ~/.config/tofi/configA --drun-launch=true"
+      "on-click": "/home/rei/.config/rofi/launchers/type-6/launcher.sh"
     },
     "battery": {
     "states": {
@@ -114,7 +114,7 @@
     },
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates --no-zero-output",
-    "on-click": "exec sudo pacman -Syu"
+    "on-click": "sudo pacman -Syu"
   },
 
     "hyprland/workspaces": {
@@ -136,7 +136,7 @@
       "spacing": 12
     },
    "custom/tray-collapsed": {
-      "format": "reiivc@cachyos ",
+      "format": "     ",
       "tooltip": false
     },
    "custom/tray-left-end": {
